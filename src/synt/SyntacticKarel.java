@@ -1,5 +1,7 @@
 package synt;
 
+import resources.TerminalColors;
+
 public class SyntacticKarel implements KarelLang {
 	private SyntacticOperations operations;
 
@@ -9,7 +11,7 @@ public class SyntacticKarel implements KarelLang {
 	}
 
 	public boolean analyze(){
-		System.out.println("Starting Syntactic Analyzer...");
+		System.out.println(TerminalColors.ANSI_GREEN+"Starting Syntactic Analyzer..."+TerminalColors.ANSI_RESET);
 		this.program();
 		System.out.println("Succesful!");
 		return true;

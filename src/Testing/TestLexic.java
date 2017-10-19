@@ -1,9 +1,13 @@
 package Testing;
 
 
+import Input.FileInput;
+import Input.InputBuffer;
 import lex.LexicAutomata;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.LinkedList;
 
 @Test
 public class TestLexic {
@@ -18,6 +22,13 @@ public class TestLexic {
 		lA.setLoop('-', 3);
 		Assert.assertFalse(lA.verifyToken("nada"));
 		Assert.assertTrue(lA.verifyToken("ab1-------"));
+	}
+
+	@Test
+	public void testParser(){
+		InputBuffer input = new FileInput();
+		LinkedList<String> tokens = input.processInput("Testing/test_noSynt.karel");
+		Assert.assertEquals(tokens.getFirst(),"public");
 	}
 
 }

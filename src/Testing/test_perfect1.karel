@@ -1,0 +1,14 @@
+class program {
+    void foo ( ) {
+        if ( front-is-clear ) {
+
+        } else {
+            iterate ( 5 ) {
+                move ( )
+            }
+        }
+    }
+    program ( ) {
+        foo ( )
+    }
+}
