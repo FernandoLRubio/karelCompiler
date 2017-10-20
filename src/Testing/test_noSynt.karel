@@ -1,7 +1,9 @@
-public class {
+class program {
 
    void rembrandt ( ) {
-        Move ( )
+        move ( )
    }
+
+
 
 }

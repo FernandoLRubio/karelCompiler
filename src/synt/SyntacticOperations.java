@@ -29,7 +29,7 @@ public class SyntacticOperations {
 		System.out.println(warning+this.tokens[tokensIndex]);
 	}
 
-	public boolean verify(String expectedToken){
+	public boolean oldverify(String expectedToken){
 		if (!this.tokens[tokensIndex].equals(expectedToken)){
 			System.out.println(TerminalColors.ANSI_YELLOW+"Warning: token "+TerminalColors.ANSI_BLUE+this.tokens[tokensIndex]+TerminalColors.ANSI_YELLOW+" is not complying, "+TerminalColors.ANSI_BLUE+expectedToken+TerminalColors.ANSI_YELLOW+" expected"+". At token "+tokensIndex+TerminalColors.ANSI_RESET+"\n");
 		}
@@ -47,7 +47,7 @@ public class SyntacticOperations {
 		}
 	}
 
-	public boolean probe(String expectedToken){
+	public boolean verify(String expectedToken){
 		if (this.tokens[tokensIndex].equals(expectedToken)){
 			return true;
 		}else{

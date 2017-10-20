@@ -2,8 +2,11 @@ package synt;
 
 import resources.TerminalColors;
 
+import java.util.LinkedList;
+
 public class SyntacticKarel implements KarelLang {
 	private SyntacticOperations operations;
+	private LinkedList<Integer> intermediateCode= new LinkedList<Integer>();
 
 	public SyntacticKarel(String[] tokens){
 		this.operations = new SyntacticOperations(tokens);
@@ -39,7 +42,7 @@ public class SyntacticKarel implements KarelLang {
 
 	@Override
 	public void functions() {
-		if(!operations.probe("program")){
+		if(!operations.verify("program")){
 			this.function();
 			this.functions_prima();
 		}
@@ -48,7 +51,7 @@ public class SyntacticKarel implements KarelLang {
 
 	@Override
 	public void functions_prima() {
-		if(!operations.probe("program")){
+		if(!operations.verify("program")){
 			this.function();
 			this.functions_prima();
 		}
@@ -91,7 +94,7 @@ public class SyntacticKarel implements KarelLang {
 
 	@Override
 	public void body() {
-		if (!operations.probe("}")){
+		if (!operations.verify("}")){
 			this.expression();
 			this.body_prima();
 		}
@@ -99,7 +102,7 @@ public class SyntacticKarel implements KarelLang {
 
 	@Override
 	public void body_prima() {
-		if (!operations.probe("}")){
+		if (!operations.verify("e}")){
 			this.expression();
 			this.body_prima();
 		}
@@ -107,13 +110,13 @@ public class SyntacticKarel implements KarelLang {
 
 	@Override
 	public void expression() {
-		if (operations.probe("if")){
+		if (operations.verify("if")){
 			this.if_expression();
 		}
-		else if(operations.probe("while")){
+		else if(operations.verify("while")){
 			this.while_();
 		}
-		else if(operations.probe("iterate")){
+		else if(operations.verify("iterate")){
 			this.iterate_expression();
 		}
 		else {
@@ -162,7 +165,7 @@ public class SyntacticKarel implements KarelLang {
 
 	@Override
 	public void else_() {
-		if (operations.probe("else")){
+		if (operations.verify("else")){
 			if (operations.require("else")){
 				if (operations.require("{")){
 					this.body();
@@ -217,55 +220,55 @@ public class SyntacticKarel implements KarelLang {
 
 	@Override
 	public void condition() {
-		if (operations.probe("front-is-clear")) {
+		if (operations.verify("front-is-clear")) {
 			operations.advance();
 		}
-		else if (operations.probe("left-is-clear")) {
+		else if (operations.verify("left-is-clear")) {
 			operations.advance();
 		}
-		else if (operations.probe("right-is-clear")) {
+		else if (operations.verify("right-is-clear")) {
 			operations.advance();
 		}
-		else if (operations.probe("front-is-blocked")) {
+		else if (operations.verify("front-is-blocked")) {
 			operations.advance();
 		}
-		else if (operations.probe("left-is-blocked")) {
+		else if (operations.verify("left-is-blocked")) {
 			operations.advance();
 		}
-		else if (operations.probe("right-is-blocked")) {
+		else if (operations.verify("right-is-blocked")) {
 			operations.advance();
 		}
-		else if (operations.probe("next-to-a-beeper")) {
+		else if (operations.verify("next-to-a-beeper")) {
 			operations.advance();
 		}
-		else if (operations.probe("facing-north")) {
+		else if (operations.verify("facing-north")) {
 			operations.advance();
 		}
-		else if (operations.probe("facing-south")) {
+		else if (operations.verify("facing-south")) {
 			operations.advance();
 		}
-		else if (operations.probe("facing-east")) {
+		else if (operations.verify("facing-east")) {
 			operations.advance();
 		}
-		else if (operations.probe("facing-west")) {
+		else if (operations.verify("facing-west")) {
 			operations.advance();
 		}
-		else if (operations.probe("not-facing-north")) {
+		else if (operations.verify("not-facing-north")) {
 			operations.advance();
 		}
-		else if (operations.probe("not-facing-south")) {
+		else if (operations.verify("not-facing-south")) {
 			operations.advance();
 		}
-		else if (operations.probe("not-facing-east")) {
+		else if (operations.verify("not-facing-east")) {
 			operations.advance();
 		}
-		else if (operations.probe("not-facing-west")) {
+		else if (operations.verify("not-facing-west")) {
 			operations.advance();
 		}
-		else if (operations.probe("any-beepers-in-beeper-bag")) {
+		else if (operations.verify("any-beepers-in-beeper-bag")) {
 			operations.advance();
 		}
-		else if (operations.probe("no-beepers-in-beeper-bag")) {
+		else if (operations.verify("no-beepers-in-beeper-bag")) {
 			operations.advance();
 		}else{
 			operations.addSpecificError(" instead of any Karel condition");
@@ -276,7 +279,7 @@ public class SyntacticKarel implements KarelLang {
 
 	@Override
 	public boolean official_function() {
-		if (operations.probe("move") || operations.probe("turnLeft") || operations.probe("pickBeeper") || operations.probe("end") ) {
+		if (operations.verify("move") || operations.verify("turnLeft") || operations.verify("pickBeeper") || operations.verify("end") ) {
 			return true;
 		}else{
 			return false;
