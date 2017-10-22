@@ -102,7 +102,7 @@ public class SyntacticKarel implements KarelLang {
 
 	@Override
 	public void body_prima() {
-		if (!operations.verify("e}")){
+		if (!operations.verify("}")){
 			this.expression();
 			this.body_prima();
 		}

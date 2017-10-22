@@ -18,7 +18,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		InputBuffer input = new FileInput();
-		LinkedList<String> tokenList = input.processInput("/home/rubio/Documents/projects/karelCompiler/src/Testing/test_noSynt.karel");
+		LinkedList<String> tokenList = input.processInput("C:\\Users\\mafel\\Documents\\compilers\\src\\Testing\\test_perfect1.karel");
 		System.out.println(tokenList.toString()+"\n");
 		String[] tokenarray = Main.transform(tokenList);
 		SyntacticKarel syntKarel = new SyntacticKarel(tokenarray);
