@@ -17,6 +17,7 @@ public class SyntacticKarel implements KarelLang {
 	public boolean analyze(){
 		System.out.println(TerminalColors.ANSI_GREEN+"Starting Syntactic Analyzer..."+TerminalColors.ANSI_RESET);
 		this.program();
+		this.intermediate.put(160000);
 		System.out.println("Succesful!");
 		System.out.println(this.intermediate.toString());
 		return true;
@@ -69,6 +70,8 @@ public class SyntacticKarel implements KarelLang {
 						this.body();
 						if (!operations.require("}")){
 							this.exitErrors();
+						}else{
+							this.intermediate.put(999);
 						}
 					}else  this.exitErrors();
 				}else  this.exitErrors();
@@ -79,6 +82,8 @@ public class SyntacticKarel implements KarelLang {
 	@Override
 	public void main_function() {
 		if (operations.require("program")){
+			this.intermediate.put(150000);
+			this.intermediate.setInMain(true);
 			if (operations.require("(")){
 				if (operations.require(")")){
 					if (operations.require("{")){
@@ -151,14 +156,19 @@ public class SyntacticKarel implements KarelLang {
 	@Override
 	public void if_expression() {
 		if (operations.require("if")){
-			this.intermediate.putIf();
+			this.intermediate.put(5000);
 			if (operations.require("(")){
 				this.condition();
+				this.intermediate.putStackedJump();
 				if (operations.require(")")){
 					if (operations.require("{")){
 						this.body();
 						if (operations.require("}")){
-							this.else_();
+							if (operations.verify("else")){
+								this.else_();
+							}else{
+								this.intermediate.finishJump();
+							}
 						}else  this.exitErrors();
 					}else  this.exitErrors();
 				}else  this.exitErrors();
@@ -170,11 +180,16 @@ public class SyntacticKarel implements KarelLang {
 	public void else_() {
 		if (operations.verify("else")){
 			if (operations.require("else")){
-				this.intermediate.putElse();
+				this.intermediate.finishJump(2);
+				this.intermediate.putStackedJump();
 				if (operations.require("{")){
 					this.body();
+
 					if (!operations.require("}")){
 						this.exitErrors();
+					}else{
+
+						this.intermediate.finishJump();
 					}
 				}else  this.exitErrors();
 			}else  this.exitErrors();
@@ -184,14 +199,19 @@ public class SyntacticKarel implements KarelLang {
 	@Override
 	public void while_() {
 		if (operations.require("while")){
-			this.intermediate.putWhile();
+			this.intermediate.whileStack();
+			this.intermediate.put(7000);
 			if (operations.require("(")){
 				this.condition();
+				this.intermediate.putStackedJump();
 				if (operations.require(")")){
 					if (operations.require("{")){
 						this.body();
 						if (!operations.require("}")){
 							this.exitErrors();
+						}else{
+							this.intermediate.finishWhile();
+							this.intermediate.finishJump();
 						}
 					}else  this.exitErrors();
 				}else  this.exitErrors();
@@ -202,14 +222,20 @@ public class SyntacticKarel implements KarelLang {
 	@Override
 	public void iterate_expression() {
 		if (operations.require("iterate")) {
-			this.intermediate.putIterate();
+			int x = this.intermediate.getintermediateIndex()+1                  ;
+			this.intermediate.put(8000);
 			if (operations.require("(")) {
 				this.number();
 				if (operations.require(")")) {
+					this.intermediate.putStackedJump();
 					if (operations.require("{")) {
 						this.body();
 						if (!operations.require("}")) {
 							this.exitErrors();
+						}else{
+							this.intermediate.put(998);
+							this.intermediate.put(x);
+							this.intermediate.finishJump(+1);
 						}
 					} else this.exitErrors();
 				} else this.exitErrors();
@@ -221,7 +247,11 @@ public class SyntacticKarel implements KarelLang {
 	public void number() {
 		if (!operations.requireType("Integer")){
 			operations.getErrors();
+		}else{
+			this.intermediate.put(Integer.parseInt(this.operations.checkToken()));
+			this.operations.advance();
 		}
+
 	}
 
 	@Override
@@ -304,15 +334,17 @@ public class SyntacticKarel implements KarelLang {
 	@Override
 	public boolean official_function() {
 		if (operations.verify("move") || operations.verify("turnLeft") || operations.verify("pickBeeper") || operations.verify("end") ) {
-			switch (this.operations.checkToken()){
-				case "move":
-					this.intermediate.put(1000);
-				case "turnLeft":
-					this.intermediate.put(2000);
-				case "pickbeeper":
-					this.intermediate.put(3000);
-				case "end":
-					this.intermediate.put(4000);
+			if (operations.verify("move")){
+				this.intermediate.put(1000);
+			}
+			else if (operations.verify("turnLeft")){
+				this.intermediate.put(2000);
+			}
+			else if (operations.verify("pickbeeper")){
+				this.intermediate.put(3000);
+			}
+			else if (operations.verify("end")){
+				this.intermediate.put(4000);
 			}
 			return true;
 		}else{

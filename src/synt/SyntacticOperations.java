@@ -66,7 +66,6 @@ public class SyntacticOperations {
 				ex.printStackTrace();
 			}
 		}
-		this.tokensIndex++;
 		return result;
 	}
 

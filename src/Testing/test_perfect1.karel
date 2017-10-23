@@ -1,21 +1,21 @@
 class program {
-    void foo ( ) {
-        if ( front-is-clear ) {
-
+  program ( ) {
+    move ( )
+    if ( facing-north ) {
+      turnleft ( )
+    } else {
+      if ( facing-south ) {
+        turnleft ( )
+        turnleft ( )
+      } else {
+        if ( facing-east ) {
+          turnleft ( )
+          turnleft ( )
         } else {
-            iterate ( 5 ) {
-                move ( )
-            }
+          move ( )
         }
+      }
     }
-
-    void turnRight ( ) {
-        turnLeft ( )
-        turnLeft ( )
-        turnLeft ( )
-    }
-
-    program ( ) {
-        foo ( )
-    }
+    end ( )
+  }
 }

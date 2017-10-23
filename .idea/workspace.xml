@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Compiler:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8f84cbec-4a4c-44a7-83aa-182979cad60d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IntermediateCodeGenerator/CodeGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IntermediateCodeGenerator/KarelIntermediateCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IntermediateCodeGenerator/functionData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KarelSyntactic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/IntermediateCodeReference.csv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler/resources/IntermediateCodeReference.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/IntermediateCodeReference.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Compiler/IntermediateCodeGenerator/CodeGenerator.class" afterPath="$PROJECT_DIR$/out/production/Compiler/IntermediateCodeGenerator/CodeGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Compiler/main/Main.class" afterPath="$PROJECT_DIR$/out/production/Compiler/main/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Compiler/synt/SyntacticKarel.class" afterPath="$PROJECT_DIR$/out/production/Compiler/synt/SyntacticKarel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Compiler/synt/SyntacticOperations.class" afterPath="$PROJECT_DIR$/out/production/Compiler/synt/SyntacticOperations.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Compiler/Testing/test_perfect1.karel" afterPath="$PROJECT_DIR$/out/production/Compiler/Testing/test_perfect1.karel" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IntermediateCodeGenerator/CodeGenerator.java" afterPath="$PROJECT_DIR$/src/IntermediateCodeGenerator/CodeGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Testing/test_perfect1.karel" afterPath="$PROJECT_DIR$/src/Testing/test_perfect1.karel" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="$PROJECT_DIR$/src/main/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/synt/SyntacticKarel.java" afterPath="$PROJECT_DIR$/src/synt/SyntacticKarel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/synt/SyntacticOperations.java" afterPath="$PROJECT_DIR$/src/synt/SyntacticOperations.java" />
     </list>
@@ -31,34 +44,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SyntacticKarel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/synt/SyntacticKarel.java">
+      <file leaf-file-name="CodeGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/IntermediateCodeGenerator/CodeGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="314" column="48" lean-forward="false" selection-start-line="314" selection-start-column="48" selection-end-line="314" selection-end-column="48" />
+            <state relative-caret-position="321">
+              <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
+                <element signature="e#733#734#0" expanded="true" />
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
+                <element signature="e#925#926#0" expanded="true" />
+                <element signature="e#964#965#0" expanded="true" />
+                <element signature="e#990#991#0" expanded="true" />
+                <element signature="e#1029#1030#0" expanded="true" />
+                <element signature="e#1057#1058#0" expanded="true" />
+                <element signature="e#1096#1097#0" expanded="true" />
+                <element signature="e#2124#2125#0" expanded="true" />
+                <element signature="e#2181#2182#0" expanded="true" />
+                <element signature="e#2304#2305#0" expanded="true" />
+                <element signature="e#2346#2347#0" expanded="true" />
+                <element signature="e#2388#2389#0" expanded="true" />
+                <element signature="e#2415#2416#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileInput.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Input/FileInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodeGenerator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/IntermediateCodeGenerator/CodeGenerator.java">
+      <file leaf-file-name="IntermediateCodeReference.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resources/IntermediateCodeReference.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#519#520#0" expanded="true" />
-                <element signature="e#558#559#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
-                <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#715#716#0" expanded="true" />
-                <element signature="e#754#755#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="558">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SyntacticKarel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/synt/SyntacticKarel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,8 +105,8 @@
       <file leaf-file-name="functionData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IntermediateCodeGenerator/functionData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="84" lean-forward="false" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="84" />
+            <state relative-caret-position="252">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="e#236#237#0" expanded="true" />
                 <element signature="e#254#255#0" expanded="true" />
@@ -87,8 +126,8 @@
       <file leaf-file-name="SyntacticOperations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/synt/SyntacticOperations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="82" column="20" lean-forward="false" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
+            <state relative-caret-position="412">
+              <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -97,18 +136,28 @@
       <file leaf-file-name="test_noSynt.karel" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Testing/test_noSynt.karel">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="144">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_perfect1.karel" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="48" column="53" lean-forward="true" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_perfect1.karel" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Testing/test_perfect1.karel">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="216">
+              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -138,6 +187,13 @@
       <find>input</find>
       <find>filename</find>
       <find>ver</find>
+      <find>enum</find>
+      <find>Syntax</find>
+      <find>showError</find>
+      <find>999</find>
+      <find>Stack</find>
+      <find>998</find>
+      <find>customer</find>
     </findStrings>
     <replaceStrings>
       <replace>SynthTree</replace>
@@ -150,6 +206,11 @@
       <replace>currentLine</replace>
       <replace>parser</replace>
       <replace>sourcecode</replace>
+      <replace>int</replace>
+      <replace>sintax</replace>
+      <replace>syntax</replace>
+      <replace>ExitErrors</replace>
+      <replace>Queue</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -190,16 +251,18 @@
         <option value="$PROJECT_DIR$/src/Input/FileInput.java" />
         <option value="$PROJECT_DIR$/src/lex/LexicAutomata.java" />
         <option value="$PROJECT_DIR$/src/lex/KarelLexicAnalyzer.java" />
-        <option value="$PROJECT_DIR$/src/Testing/test_noSynt.karel" />
         <option value="$PROJECT_DIR$/out/production/Compiler/main/Main.class" />
-        <option value="$PROJECT_DIR$/src/main/Main.java" />
         <option value="$PROJECT_DIR$/src/IntermediateCodeGenerator/KarelIntermediateCode.java" />
-        <option value="$PROJECT_DIR$/src/synt/SyntacticOperations.java" />
         <option value="$PROJECT_DIR$/src/IntermediateCodeGenerator/KeyLine.java" />
         <option value="$PROJECT_DIR$/src/IntermediateCodeGenerator/functionData.java" />
+        <option value="$PROJECT_DIR$/src/synt/KarelSyntactic.java" />
+        <option value="$PROJECT_DIR$/src/Testing/test_noSynt.karel" />
+        <option value="$PROJECT_DIR$/src/synt/SyntacticOperations.java" />
         <option value="$PROJECT_DIR$/src/Testing/test_perfect1.karel" />
         <option value="$PROJECT_DIR$/src/synt/SyntacticKarel.java" />
         <option value="$PROJECT_DIR$/src/IntermediateCodeGenerator/CodeGenerator.java" />
+        <option value="$PROJECT_DIR$/src/resources/IntermediateCodeReference.txt" />
+        <option value="$PROJECT_DIR$/src/main/Main.java" />
       </list>
     </option>
   </component>
@@ -284,6 +347,47 @@
               <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
               <item name="compilers" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="compilers" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="compilers" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="compilers" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="IntermediateCodeGenerator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="compilers" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="compilers" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="compilers" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="synt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="compilers" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Testing" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -294,7 +398,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -302,12 +406,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/synt" />
-      <recent name="$PROJECT_DIR$/src" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mafel\Documents\compilers" />
+      <recent name="C:\Users\mafel\Documents\compilers\src\synt" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="synt" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/synt" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -571,7 +679,7 @@
       <workItem from="1508269598151" duration="335000" />
       <workItem from="1508436855983" duration="7445000" />
       <workItem from="1508454790213" duration="3930000" />
-      <workItem from="1508708988991" duration="5579000" />
+      <workItem from="1508708988991" duration="17272000" />
     </task>
     <servers />
   </component>
@@ -608,25 +716,26 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36179000" />
+    <option name="totallyTimeSpent" value="47872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822084" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28118393" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28646934" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15572916" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15572916" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -679,30 +788,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/synt/SyntacticKarel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="111" lean-forward="false" selection-start-line="13" selection-start-column="111" selection-end-line="13" selection-end-column="111" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/synt/SyntacticOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="76" column="25" lean-forward="false" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
-          <folding>
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -892,7 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Input/FileInput.java" />
     <entry file="file://$PROJECT_DIR$/src/lex/KarelLexicAnalyzer.java" />
     <entry file="file://$PROJECT_DIR$/src/lex/LexicAutomata.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -930,60 +1019,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+    <entry file="file://$PROJECT_DIR$/KarelSyntactic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="66" lean-forward="true" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
+        <state relative-caret-position="4571">
+          <caret line="317" column="44" lean-forward="true" selection-start-line="317" selection-start-column="44" selection-end-line="317" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#300#309#0" expanded="true" />
+            <element signature="e#2043#2044#0" expanded="true" />
+            <element signature="e#2066#2067#0" expanded="true" />
+            <element signature="e#3158#3159#0" expanded="true" />
+            <element signature="e#3176#3177#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/IntermediateCodeReference.txt">
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/NumberFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Testing/test_noSynt.karel">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/synt/KarelLang.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="38" column="36" lean-forward="false" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/synt/SyntacticOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="82" column="20" lean-forward="false" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Testing/test_perfect1.karel">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="485">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IntermediateCodeGenerator/functionData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="84" lean-forward="false" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="84" />
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#236#237#0" expanded="true" />
             <element signature="e#254#255#0" expanded="true" />
@@ -999,31 +1061,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/synt/SyntacticOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/synt/SyntacticKarel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="314" column="48" lean-forward="false" selection-start-line="314" selection-start-column="48" selection-end-line="314" selection-end-column="48" />
+        <state relative-caret-position="249">
+          <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/IntermediateCodeReference.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Testing/test_noSynt.karel">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/synt/KarelLang.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="36" lean-forward="false" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IntermediateCodeGenerator/CodeGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        <state relative-caret-position="321">
+          <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#2124#2125#0" expanded="true" />
+            <element signature="e#2181#2182#0" expanded="true" />
+            <element signature="e#2304#2305#0" expanded="true" />
+            <element signature="e#2346#2347#0" expanded="true" />
+            <element signature="e#2388#2389#0" expanded="true" />
+            <element signature="e#2415#2416#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Input/FileInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="48" column="53" lean-forward="true" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Testing/test_perfect1.karel">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,10 +1157,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Compiler:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
