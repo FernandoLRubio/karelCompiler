@@ -8,6 +8,13 @@ class program {
             }
         }
     }
+
+    void turnRight ( ) {
+        turnLeft ( )
+        turnLeft ( )
+        turnLeft ( )
+    }
+
     program ( ) {
         foo ( )
     }

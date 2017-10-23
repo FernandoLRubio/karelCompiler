@@ -77,4 +77,9 @@ public class SyntacticOperations {
 			return false;
 		}
 	}
+
+	public String checkToken(){
+		String temp = this.tokens[tokensIndex].toString();
+		return temp;
+	}
 }
