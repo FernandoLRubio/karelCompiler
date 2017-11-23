@@ -6,6 +6,8 @@ import synt.SyntacticKarel;
 
 import javax.swing.*;
 import java.io.File;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.LinkedList;
 
 public class Main {

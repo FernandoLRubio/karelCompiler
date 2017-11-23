@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/library.js"></script>
+    <script type="text/javascript" src="js/phaser.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/master.css">
+    <title>Karel 1</title>
+  </head>
+  <body>
+
+
+
+
+    <script type="text/javascript">
+
+    var pos = [35,170,303,436,569,702];
+    var game = new Phaser.Game(799, 798, Phaser.AUTO, '', { preload: preload, create: create, update: update });
+    var randx = 0;
+    var randy = 0;
+    var facing = 0;
+    var code = {"log": "compiled at", "code": [150000,1000,1000,1000,4000]};
+    var codeindex = 0;
+    //facing: north = 0, west = 1, south = 2, east = 3
+
+
+
+    function preload() {
+      game.load.image('grid', 'assets/grid.jpg');
+      game.load.image('robot', 'assets/robot.png');
+      randx = getRandom(0,5);
+      randy = getRandom(0,5);
+      pos = [35,170,303,436,569,702];
+      direction = getRandom(0,3);
+      moves = code;
+      speed = 133;
+      currentIndex = [randx, randy];
+      flipflop = false;
+      console.log("randx: "+randx);
+      console.log("randy: "+randy);
+    }
+
+    function create() {
+      game.add.sprite(0,0, 'grid');
+      robot = game.add.sprite(pos[randx],pos[randy], 'robot');
+      enterkey = game.input.keyboard.addKey(Phaser.Keyboard.ENTER);
+      enterkey.onPressCallback = function(){
+        console.log("bitch");
+      };
+
+    }
+
+
+
+    function update(){
+      if (game.input.keyboard.isDown(Phaser.Keyboard.ENTER) && !flipflop) {
+          switch (direction) {
+            case 0:
+              robot.y -= speed;
+              break;
+            case 1:
+              robot.x -= speed;
+              break;
+            case 2:
+              robot.y += speed;
+              break;
+            case 3:
+              robot.x += speed;
+              break;
+            default:
+              break;
+        }
+        flipflop = true;
+      }else{
+        flipflop = false;
+      }
+    }
+
+
+    </script>
+  </body>
+</html>

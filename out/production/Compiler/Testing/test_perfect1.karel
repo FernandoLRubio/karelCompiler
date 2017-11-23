@@ -1,21 +1,12 @@
 class program {
+  void funo ( ) {
+    turnleft ( )
+    turnleft ( )
+    turnleft ( )
+  }
   program ( ) {
     move ( )
-    if ( facing-north ) {
-      turnleft ( )
-    } else {
-      if ( facing-south ) {
-        turnleft ( )
-        turnleft ( )
-      } else {
-        if ( facing-east ) {
-          turnleft ( )
-          turnleft ( )
-        } else {
-          move ( )
-        }
-      }
-    }
+    funo ( )
     end ( )
   }
 }

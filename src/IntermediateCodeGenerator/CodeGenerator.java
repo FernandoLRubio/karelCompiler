@@ -2,9 +2,7 @@ package IntermediateCodeGenerator;
 
 import resources.TerminalColors;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Stack;
+import java.util.*;
 
 public class CodeGenerator {
 	private HashMap<String,functionData> symbolsChart;
@@ -26,26 +24,12 @@ public class CodeGenerator {
 		this.intermediateCode.add(number);
 	}
 
-	public void putIf(){
-		this.intermediateCode.add(11111);
-	}
 
 	public void putStackedJump(){
 		this.put(998);
 		this.jumpStack.push(this.intermediateCode.size());
 	}
 
-	public void putElse(){
-		this.intermediateCode.add(22222);
-	}
-
-	public void putWhile(){
-		this.intermediateCode.add(33333);
-	}
-
-	public void putIterate(){
-		this.intermediateCode.add(44444);
-	}
 
 	public void putcustomFunction(String name){
 		if (!this.symbolsChart.containsKey(name)){
@@ -94,4 +78,16 @@ public class CodeGenerator {
 	public void setInMain(boolean inMain) {
 		this.inMain = inMain;
 	}
+
+	public LinkedList<Integer> getIntermediateCode(){
+        return this.intermediateCode;
+    };
+
+	public void setCode(int x,int code){
+	    this.intermediateCode.set(x,code);
+    }
+
+    public void setFirstJump() {
+	    this.intermediateCode.set(1,this.intermediateCode.size());
+    }
 }

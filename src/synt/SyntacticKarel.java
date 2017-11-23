@@ -1,6 +1,7 @@
 package synt;
 
 import IntermediateCodeGenerator.CodeGenerator;
+import output.Exporter;
 import resources.TerminalColors;
 
 import java.util.LinkedList;
@@ -16,10 +17,12 @@ public class SyntacticKarel implements KarelLang {
 
 	public boolean analyze(){
 		System.out.println(TerminalColors.ANSI_GREEN+"Starting Syntactic Analyzer..."+TerminalColors.ANSI_RESET);
+        this.intermediate.put(998);
+        this.intermediate.put(000);
 		this.program();
-		this.intermediate.put(160000);
 		System.out.println("Succesful!");
 		System.out.println(this.intermediate.toString());
+        Exporter.BuildExport(this.intermediate);
 		return true;
 	}
 
@@ -82,7 +85,7 @@ public class SyntacticKarel implements KarelLang {
 	@Override
 	public void main_function() {
 		if (operations.require("program")){
-			this.intermediate.put(150000);
+			this.intermediate.setFirstJump();
 			this.intermediate.setInMain(true);
 			if (operations.require("(")){
 				if (operations.require(")")){
