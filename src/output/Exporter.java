@@ -10,7 +10,7 @@ public class Exporter {
 
     public static void BuildExport(CodeGenerator intermidiate){
 
-        StringBuilder sb = new StringBuilder("http://interplanetary.xyz/kareldisplay/?");
+        StringBuilder sb = new StringBuilder("http://interplanetary.xyz/kareldisplayer/?");
 
         String map = JOptionPane.showInputDialog(null,"Insert the map (36 numbers)");
         sb.append("map="+map);
