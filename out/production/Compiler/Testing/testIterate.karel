@@ -1,0 +1,8 @@
+class program {
+  program ( ) {
+    iterate ( 5 ) {
+     move ( )
+    }
+    end ( )
+  }
+}

@@ -2,6 +2,7 @@ package IntermediateCodeGenerator;
 
 import resources.TerminalColors;
 
+import java.net.URI;
 import java.util.*;
 
 public class CodeGenerator {
@@ -35,6 +36,14 @@ public class CodeGenerator {
 		if (!this.symbolsChart.containsKey(name)){
 			if (this.inMain){
 				System.out.println(TerminalColors.ANSI_RED+"ERROR: "+name+" function is not defined");
+                try {
+                    System.out.println("Opening error page...");
+                    String str = "http://interplanetary.xyz/kareldisplayer/error/?error="+name+"funtion%20is%20not%20defined";
+                    URI displaySite = new URI(str);
+                    java.awt.Desktop.getDesktop().browse(displaySite);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 				System.exit(-3);
 			}
 			functionData data = new functionData(this.customFunctionIndex*10000,this.intermediateCode.size());

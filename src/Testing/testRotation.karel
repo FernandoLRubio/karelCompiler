@@ -1,0 +1,12 @@
+class program {
+  void turnRight ( ) {
+        turnLeft ( )
+        turnLeft ( )
+        turnLeft ( )
+  }
+  program ( ) {
+    turnRight ( )
+    move ( )
+    end ( )
+  }
+}

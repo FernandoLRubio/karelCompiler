@@ -1,12 +1,13 @@
 class program {
   void funo ( ) {
-    turnleft ( )
-    turnleft ( )
-    turnleft ( )
+    turnLeft ( )
+    turnLeft ( )
+    turnLeft ( )
   }
   program ( ) {
     move ( )
     funo ( )
+    move ( )
     end ( )
   }
 }

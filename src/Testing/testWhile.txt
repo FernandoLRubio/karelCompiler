@@ -1,0 +1,8 @@
+class program {
+  program ( ) {
+    while ( front-is-clear ) {
+        move ( )
+    }
+    end ( )
+  }
+}

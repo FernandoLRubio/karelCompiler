@@ -1,0 +1,12 @@
+class program {
+  program ( ) {
+    if ( front-is-clear ) {
+        move ( )
+    }
+    else {
+        turnLeft ( )
+        move ( )
+    }
+    end ( )
+  }
+}

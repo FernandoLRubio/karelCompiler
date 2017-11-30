@@ -4,6 +4,7 @@ import IntermediateCodeGenerator.CodeGenerator;
 import output.Exporter;
 import resources.TerminalColors;
 
+import java.net.URI;
 import java.util.LinkedList;
 
 public class SyntacticKarel implements KarelLang {
@@ -28,6 +29,16 @@ public class SyntacticKarel implements KarelLang {
 
 	public void exitErrors(){
 		System.out.println(this.operations.getErrors());
+
+		try {
+            System.out.println("Opening error page...");
+            URI displaySite = new URI("http://interplanetary.xyz/kareldisplayer/error/?"+this.operations.getErrors());
+            java.awt.Desktop.getDesktop().browse(displaySite);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
 		System.exit(-1);
 	}
 
@@ -225,7 +236,7 @@ public class SyntacticKarel implements KarelLang {
 	@Override
 	public void iterate_expression() {
 		if (operations.require("iterate")) {
-			int x = this.intermediate.getintermediateIndex()+1                  ;
+			int x = this.intermediate.getintermediateIndex()                  ;
 			this.intermediate.put(8000);
 			if (operations.require("(")) {
 				this.number();
@@ -238,7 +249,7 @@ public class SyntacticKarel implements KarelLang {
 						}else{
 							this.intermediate.put(998);
 							this.intermediate.put(x);
-							this.intermediate.finishJump(+1);
+							this.intermediate.finishJump();
 						}
 					} else this.exitErrors();
 				} else this.exitErrors();
@@ -336,7 +347,7 @@ public class SyntacticKarel implements KarelLang {
 
 	@Override
 	public boolean official_function() {
-		if (operations.verify("move") || operations.verify("turnLeft") || operations.verify("pickBeeper") || operations.verify("end") ) {
+		if (operations.verify("move") || operations.verify("turnLeft") || operations.verify("pickbeeper") || operations.verify("end") || operations.verify("putbeeper") ) {
 			if (operations.verify("move")){
 				this.intermediate.put(1000);
 			}
@@ -348,7 +359,9 @@ public class SyntacticKarel implements KarelLang {
 			}
 			else if (operations.verify("end")){
 				this.intermediate.put(4000);
-			}
+			}else if (operations.verify("putbeeper")){
+			    this.intermediate.put(3500);
+            }
 			return true;
 		}else{
 			return false;
